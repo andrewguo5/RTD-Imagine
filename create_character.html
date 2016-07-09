@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>M&ampB Capital</title>
+	<link rel="stylesheet" href="mbstyles.css">
+	<link rel="stylesheet" href="create_character.css">
+</head>
+<body>
+	<header>
+		<p class="alignleft"> </p>
+		<p class="alignright"> Morrison &amp Bailey Capital </p>
+	</header>
+	<section class="shortblock">
+	</section>
+	<section class="centered_wide">
+		<div id="creation_welcome">
+			<h1>Character Creation</h1>
+			<hr>
+		</div>
+		<div id="creation_intro">
+			<p>Welcome to the RTD character creation. The process will ask you for personal information like age, name, height, etc.</p>
+			<p>Be as accurate as you can in providing these details. Your character will be a reflection of your real self.</p>
+			<br>
+			<p>Start by putting in your character's name, and selecting a character class.</p>
+		</div>
+	</section>
+	<section id="creation_section" class="centered_wide">
+		<div id="char_name">
+			Character Name: <input id="char_name" type="text" name="" style="width: 45%">
+		</div>
+		<div id="char_classes"><!--TODO: Icon resources -->
+			<div id="sword" class="class_box">
+				Sword
+			</div>
+			<div id="spear" class="class_box">
+				Spear
+			</div>
+			<div id="rifle" class="class_box">
+				Rifle
+			</div>
+			<div id="cross" class="class_box">
+				Cross
+			</div>
+			<div id="staff" class="class_box">
+				Staff
+			</div>
+			<div id="heavy" class="class_box">
+				Heavy
+			</div>
+		</div>
+	</section>
+	<footer>
+		<p class="alignleft">Morrison &amp Bailey Capital LLC &copy Andrew Guo BS 2016</p>
+		<p class="alignright">andrew.guo5@gmail.com</p>
+	</footer>
+	<script type="text/javascript" src="create_character.js"></script>
+	<form id="char_class_form" style="display:none">
+		<input id="char_class" type="radio" name="class" value="sword">
+		<input id="char_class" type="radio" name="class" value="spear">
+		<input id="char_class" type="radio" name="class" value="rifle">
+		<input id="char_class" type="radio" name="class" value="cross">
+		<input id="char_class" type="radio" name="class" value="staff">
+		<input id="char_class" type="radio" name="class" value="heavy">
+	</form>
+</body>
+</html>

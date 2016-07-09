@@ -1,0 +1,21 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+#creation_intro {
+	width: 65%;
+}
+#creation_section {
+	padding-top: 25px;
+	color: lightblue;
+}
+#char_classes {
+	width: 685px;
+}
+.class_box {
+	display: inline-block;
+	width: 175px;
+	height: 100px;
+	margin: 10px;
+	outline-style: double;
+}

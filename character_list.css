@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.character_slot {
+	width: 98%;
+	height: 120px;
+	background-color: slategrey;
+	outline-style: double;
+	color: red;
+	margin-top: 20px;
+	margin-left: 5px;
+	padding: 5px;
+	font-family: "Courier New", Courier, monospace;
+	color: Gainsboro;
+}
