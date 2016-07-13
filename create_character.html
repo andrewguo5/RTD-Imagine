@@ -6,61 +6,168 @@
 	<link rel="stylesheet" href="create_character.css">
 </head>
 <body>
-	<header>
-		<p class="alignleft"> </p>
-		<p class="alignright"> Morrison &amp Bailey Capital </p>
-	</header>
-	<section class="shortblock">
-	</section>
+<header>
+	<p class="alignleft"> </p>
+	<p class="alignright"> Morrison &amp Bailey Capital </p>
+</header>
+<section class="shortblock">
+</section>
+
+<!-- PAGE 1 -->
+<div id="page1">
 	<section class="centered_wide">
 		<div id="creation_welcome">
 			<h1>Character Creation</h1>
 			<hr>
 		</div>
-		<div id="creation_intro">
+		<div id="continue_1to2" class="continue"> 
+			CONTINUE
+			<span id="continue_span" class="clickable" onclick="pageContinue('page1', 'page2')" 
+			onmouseover="highlight('continue_1to2')" onmouseout="unhighlight('continue_1to2')"></span>
+		</div>
+		<div id="creation_intro" class="intro">
 			<p>Welcome to the RTD character creation. The process will ask you for personal information like age, name, height, etc.</p>
 			<p>Be as accurate as you can in providing these details. Your character will be a reflection of your real self.</p>
 			<br>
 			<p>Start by putting in your character's name, and selecting a character class.</p>
 		</div>
-	</section>
-	<section id="creation_section" class="centered_wide">
-		<div id="char_name">
-			Character Name: <input id="char_name" type="text" name="" style="width: 45%">
-		</div>
-		<div id="char_classes"><!--TODO: Icon resources -->
+		<div id="page1_content" class="content_section">
+			<div id="char_name">
+				Character Name: <input id="char_name" type="text" name="" style="width: 45%">
+			</div>
+			<div id="char_classes"><!--TODO: Icon resources -->
 			<div id="sword" class="class_box">
 				Sword
+				<span id="sword_span" class="clickable" onclick="selectClass(0)" onmouseover="displayInfo(0)" onmouseout="undisplayInfo(0)"></span>
 			</div>
 			<div id="spear" class="class_box">
 				Spear
+				<span id="spear_span" class="clickable" onclick="selectClass(1)" onmouseover="displayInfo(1)" onmouseout="undisplayInfo(1)"></span>
 			</div>
 			<div id="rifle" class="class_box">
 				Rifle
+				<span id="rifle_span" class="clickable" onclick="selectClass(2)" onmouseover="displayInfo(2)" onmouseout="undisplayInfo(2)"></span>
 			</div>
 			<div id="cross" class="class_box">
 				Cross
+				<span id="cross_span" class="clickable" onclick="selectClass(3)" onmouseover="displayInfo(3)" onmouseout="undisplayInfo(3)"></span>
 			</div>
 			<div id="staff" class="class_box">
 				Staff
+				<span id="staff_span" class="clickable" onclick="selectClass(4)" onmouseover="displayInfo(4)" onmouseout="undisplayInfo(4)"></span>
 			</div>
 			<div id="heavy" class="class_box">
 				Heavy
+				<span id="heavy_span" class="clickable" onclick="selectClass(5)" onmouseover="displayInfo(5)" onmouseout="undisplayInfo(5)"></span>
+			</div>
+			</div>
+		</div>	
+	</section>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" style="display:none">
+	<section class="centered_wide">
+		<div id="author_welcome">
+			<h1>Author Details</h1>
+			<hr>
+		</div>
+		<div id="prev_2to1" class="previous"> 
+			PREVIOUS
+			<span id="continue_span" class="clickable" onclick="pageContinue('page2', 'page1')" 
+			onmouseover="highlight('prev_2to1')" onmouseout="unhighlight('prev_2to1')"></span>
+		</div>
+		<div id="continue_2to3" class="continue"> 
+			CONTINUE
+			<span id="continue_span" class="clickable" onclick="pageContinue('page2', 'page3')" 
+			onmouseover="highlight('continue_2to3')" onmouseout="unhighlight('continue_2to3')"></span>
+		</div>
+		<div id="author_intro" class="intro">
+			<p>Enter your personal information.</p> 
+			<p>Your character will have the same characteristics as you except for name.</p>
+		</div>
+		<div id="page2_content" class="content_section">
+			<div id="author_form_titles" class="form_titles">
+				<p>Name:</p> 
+				<p>Birthday:</p>
+				<p>Gender:</p>	
+				<p>Height:</p>
+				<p>Weight:</p>
+			</div>
+			<div id="author_form_elements" class="form_elements">
+				<p><input type="text" name="author_name"></p> 
+				<p>Month( <input type="number" name="birthday_month" style="width:30px"> )
+					Day( <input type="number" name="birthday_day" style="width:30px"> )
+					Year( <input type="number" name="birthday_year" style="width:60px"> )</p>
+					<p><select value="">
+						<option></option>
+						<option>Male</option>
+						<option>Female</option>
+					</select></p>	
+					<p><input type="number" name="author_height"> inches.</p>
+					<p><input type="number" name="author_weight"> pounds.</p>
+
+				</div>
+			</div>
+		</section>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" style="display:none">
+	<section class="centered_wide">
+		<div id="stats_welcome">
+			<h1>Character Stats</h1>
+			<hr>
+		</div>
+		<div id="prev_3to2" class="previous"> 
+			PREVIOUS
+			<span id="continue_span" class="clickable" onclick="pageContinue('page3', 'page2')" 
+			onmouseover="highlight('prev_3to2')" onmouseout="unhighlight('prev_3to2')"></span>
+		</div>
+		<div id="continue_3to4" class="continue"> 
+			CONTINUE
+			<span id="continue_span" class="clickable" onclick="pageContinue('page3', 'page4')" 
+			onmouseover="highlight('continue_3to4')" onmouseout="unhighlight('continue_3to4')"></span>
+		</div>
+		<div id="stats_intro" class="intro">
+			<p>Give an honest evaluation of your own personal stat distribution.</p>
+			<p>Use the sliders to demonstrate your own relative strengths &amp weaknesses. </p>
+		</div>
+		<div id="page3_content" class="content_section">
+			<div id="stat_names" class="form_titles">
+				<p style="color:red">STR:</p>
+				<p style="color:green">DEX:</p>
+				<p style="color:blue">INT:</p>
+			</div>
+			<div id="stat_sliders" class="form_elements">
+				<p><input type="range" id="str" max="255" value="0" oninput="soulColor()"></p>
+				<p><input type="range" id="dex" max="255" value="0" oninput="soulColor()"></p>
+				<p><input type="range" id="int" max="255" value="0" oninput="soulColor()"></p>
+			</div>
+			<div id="soul">
+
 			</div>
 		</div>
 	</section>
-	<footer>
-		<p class="alignleft">Morrison &amp Bailey Capital LLC &copy Andrew Guo BS 2016</p>
-		<p class="alignright">andrew.guo5@gmail.com</p>
-	</footer>
-	<script type="text/javascript" src="create_character.js"></script>
-	<form id="char_class_form" style="display:none">
-		<input id="char_class" type="radio" name="class" value="sword">
-		<input id="char_class" type="radio" name="class" value="spear">
-		<input id="char_class" type="radio" name="class" value="rifle">
-		<input id="char_class" type="radio" name="class" value="cross">
-		<input id="char_class" type="radio" name="class" value="staff">
-		<input id="char_class" type="radio" name="class" value="heavy">
-	</form>
+</div>
+
+<!-- PAGE 4 -->
+<div id="page4" style="display:none">
+	<section class="centered_wide">
+		<div id="sits_welcome">
+			<h1>Create your Weapon</h1>
+			<hr>
+		</div>
+		<div id="prev_4to3" class="previous"> 
+			PREVIOUS
+			<span id="continue_span" class="clickable" onclick="pageContinue('page4', 'page3')" 
+			onmouseover="highlight('prev_4to3')" onmouseout="unhighlight('prev_3to2')"></span>
+		</div>
+	</section>
+<footer>
+	<p class="alignleft">Morrison &amp Bailey Capital LLC &copy Andrew Guo BS 2016</p>
+	<p class="alignright">andrew.guo5@gmail.com</p>
+</footer>
+<script type="text/javascript" src="create_character.js"></script>
 </body>
 </html>
