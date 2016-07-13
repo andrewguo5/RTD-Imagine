@@ -38,30 +38,166 @@
 			<div id="char_classes"><!--TODO: Icon resources -->
 			<div id="sword" class="class_box">
 				Sword
-				<span id="sword_span" class="clickable" onclick="selectClass(0)" onmouseover="displayInfo(0)" onmouseout="undisplayInfo(0)"></span>
+				<span id="sword_span" class="clickable" onclick="selectClass(0)" onmouseover="displayInfo(0)" onmouseout="undisplayInfo(0)"
+					onmousemove="displayDesc(0)"></span>
 			</div>
 			<div id="spear" class="class_box">
 				Spear
-				<span id="spear_span" class="clickable" onclick="selectClass(1)" onmouseover="displayInfo(1)" onmouseout="undisplayInfo(1)"></span>
+				<span id="spear_span" class="clickable" onclick="selectClass(1)" onmouseover="displayInfo(1)" onmouseout="undisplayInfo(1)"
+					onmousemove="displayDesc(1)"></span>
 			</div>
 			<div id="rifle" class="class_box">
 				Rifle
-				<span id="rifle_span" class="clickable" onclick="selectClass(2)" onmouseover="displayInfo(2)" onmouseout="undisplayInfo(2)"></span>
+				<span id="rifle_span" class="clickable" onclick="selectClass(2)" onmouseover="displayInfo(2)" onmouseout="undisplayInfo(2)"
+					onmousemove="displayDesc(2)"></span>
 			</div>
 			<div id="cross" class="class_box">
 				Cross
-				<span id="cross_span" class="clickable" onclick="selectClass(3)" onmouseover="displayInfo(3)" onmouseout="undisplayInfo(3)"></span>
+				<span id="cross_span" class="clickable" onclick="selectClass(3)" onmouseover="displayInfo(3)" onmouseout="undisplayInfo(3)"
+					onmousemove="displayDesc(3)"></span>
 			</div>
 			<div id="staff" class="class_box">
 				Staff
-				<span id="staff_span" class="clickable" onclick="selectClass(4)" onmouseover="displayInfo(4)" onmouseout="undisplayInfo(4)"></span>
+				<span id="staff_span" class="clickable" onclick="selectClass(4)" onmouseover="displayInfo(4)" onmouseout="undisplayInfo(4)"
+					onmousemove="displayDesc(4)"></span>
 			</div>
 			<div id="heavy" class="class_box">
 				Heavy
-				<span id="heavy_span" class="clickable" onclick="selectClass(5)" onmouseover="displayInfo(5)" onmouseout="undisplayInfo(5)"></span>
+				<span id="heavy_span" class="clickable" onclick="selectClass(5)" onmouseover="displayInfo(5)" onmouseout="undisplayInfo(5)"
+					onmousemove="displayDesc(5)"></span>
 			</div>
 			</div>
 		</div>	
+		<!-- DESCRIPTIONS -->
+		<div id="sword_desc" class="descriptions">
+			<div class="title">
+				SWORD
+			</div>
+			<div class="stats">
+				<p>ATK: 0</p>
+				<p>SPE: 0</p>
+				<p>DEF: 0</p>
+				<p>RNG: 0</p>
+			</div>
+			<div class="flavor">
+				<p>"Swordsmen are the proud and reliable backbone of Continental armies. They are skilled in melee combat,
+					swift with strong defense. Their imbued and modified swords provide them with even footing against all other
+					combat classes, even ranged ones."
+				</p>
+			</div>
+		</div>
+		<div id="spear_desc" class="descriptions">
+			<div class="title">
+				SPEAR
+			</div>
+			<div class="stats">
+				<p>ATK: 0</p>
+				<p>SPE: -</p>
+				<p>DEF: 0</p>
+				<p>RNG: +</p>
+			</div>
+			<div class="stats">
+				<font color="yellow">
+				<p>DMG: +</p>
+				<p>ACC: 0</p>
+				<p>PRE: 0</p>
+				<p>CAP: -</p>
+				</font>
+			</div>
+			<div class="flavor">
+				<p>"Spearmen are noble warriors of Continental armies. They are formidible, wielding
+				long spears and axes, often augmented with magical modifiers. Skilled spearmen can throw their weapons accurately 
+				at large range and with great force."
+				</p>
+			</div>
+		</div>
+		<div id="rifle_desc" class="descriptions">
+			<div class="title">
+				RIFLE
+			</div>
+			<div class="stats">
+				<font color="yellow">
+				<p>DMG: 0</p>
+				<p>ACC: 0</p>
+				<p>PRE: +</p>
+				<p>CAP: +</p>
+				</font>
+			</div>
+			<div class="flavor">
+				<p>"Riflers are the ranged combat class of the Continental. Supporting from afar with pulse rifles, they blanket
+				battlefields with mystical energy. Their weapons can be infinitely modified, and riflers
+				take immense pride in their signature customization."
+				</p>
+			</div>
+		</div>
+		<div id="cross_desc" class="descriptions">
+			<div class="title">
+				CROSS
+			</div>
+			<div class="stats">
+				<font color="yellow">
+				<p>DMG: +</p>
+				<p>ACC: +</p>
+				<p>PRE: +</p>
+				<p>CAP: -</p>
+				</font>
+			</div>
+			<div class="flavor">
+				<p>"Deadly and precise, these Oriental snipers wield long range weapons like augmented bows and railguns. The Cross caste
+				assassins are the most powerful ranged fighers of the world, held back only by intense tradition and magazine capacity limitations."
+				</p>
+			</div>
+		</div>
+		<div id="staff_desc" class="descriptions">
+			<div class="title">
+				STAFF
+			</div>
+			<div class="stats">
+				<p>ATK: -</p>
+				<p>SPE: -</p>
+				<p>DEF: +</p>
+				<p>RNG: +</p>
+			</div>
+			<div class="stats">
+			<font color="lightgreen">
+				<p>ATK: -</p>
+				<p>SPE: 0</p>
+				<p>DEF: +</p>
+				<p>RNG: 0</p>
+				</font>
+			</div>
+			<div class="flavor">
+				<p>"The Staff caste are the immovable bulk of the Oriental army. These warriors have incredible discipline, and excel
+				at fighting multiple enemies at once with their imbued staves. Their staves can transform into Kali sticks, allowing 
+				them to utilize their high agility."
+				</p>
+			</div>
+		</div>
+		<div id="heavy_desc" class="descriptions">
+			<div class="title">
+				HEAVY
+			</div>
+			<div class="stats">
+				<p>ATK: +</p>
+				<p>SPE: -</p>
+				<p>DEF: -</p>
+				<p>RNG: +</p>
+			</div>
+			<div class="stats">
+			<font color="lightgreen">
+				<p>ATK: +</p>
+				<p>SPE: -</p>
+				<p>DEF: 0</p>
+				<p>RNG: 0</p>
+				</font>
+			</div>
+			<div class="flavor">
+				<p>"The Heavy Caste are the warrior elite of the Orient. They display incredible control and mastery over a
+				huge range of flails, whips, and darts. They can also wield blunt weapons. A single Heavy can easily demolish a small regimen of inexperienced
+				enemies."
+				</p>
+			</div>
+		</div>
 	</section>
 </div>
 
@@ -93,8 +229,7 @@
 				<p>Gender:</p>	
 				<p>Height:</p>
 				<p>Weight:</p>
-			</div>
-			<div id="author_form_elements" class="form_elements">
+			</div><div id="author_form_elements" class="form_elements">
 				<p><input type="text" name="author_name"></p> 
 				<p>Month( <input type="number" name="birthday_month" style="width:30px"> )
 					Day( <input type="number" name="birthday_day" style="width:30px"> )
@@ -106,7 +241,6 @@
 					</select></p>	
 					<p><input type="number" name="author_height"> inches.</p>
 					<p><input type="number" name="author_weight"> pounds.</p>
-
 				</div>
 			</div>
 		</section>
@@ -138,14 +272,13 @@
 				<p style="color:red">STR:</p>
 				<p style="color:green">DEX:</p>
 				<p style="color:blue">INT:</p>
-			</div>
-			<div id="stat_sliders" class="form_elements">
-				<p><input type="range" id="str" max="255" value="0" oninput="soulColor()"></p>
-				<p><input type="range" id="dex" max="255" value="0" oninput="soulColor()"></p>
-				<p><input type="range" id="int" max="255" value="0" oninput="soulColor()"></p>
+			</div><div id="stat_sliders" class="form_elements">
+				<p><input type="range" id="str" max="255" min="1" value="1" oninput="soulColor()"></p>
+				<p><input type="range" id="dex" max="255" min="1" value="1" oninput="soulColor()"></p>
+				<p><input type="range" id="int" max="255" min="1" value="1" oninput="soulColor()"></p>
 			</div>
 			<div id="soul">
-
+			<!-- This thing is really cool. -->
 			</div>
 		</div>
 	</section>
@@ -161,9 +294,92 @@
 		<div id="prev_4to3" class="previous"> 
 			PREVIOUS
 			<span id="continue_span" class="clickable" onclick="pageContinue('page4', 'page3')" 
-			onmouseover="highlight('prev_4to3')" onmouseout="unhighlight('prev_3to2')"></span>
+			onmouseover="highlight('prev_4to3')" onmouseout="unhighlight('prev_4to3')"></span>
+		</div>
+		<div id="continue_4to5" class="continue"> 
+			CONTINUE
+			<span id="continue_span" class="clickable" onclick="pageContinue('page4', 'page5')" 
+			onmouseover="highlight('continue_4to5')" onmouseout="unhighlight('continue_4to5')"></span>
+		</div>
+		<div id="sits_intro" class="intro">
+			<p>Your character will have a signature mystical weapon.</p> 
+			<p>In your lore description, you will explain how your character found or created this weapon.</p>
+			<p>Here, you will name your weapon, provide an approximate weapon class, and describe its lore.</p>
+		</div>
+		<div id="sits_content" class="content_section">
+			<div id="sits_titles" class="form_titles">
+				<p>Weapon Name:</p>
+				<p>Approximate Class:</p>
+			</div><div id="sits_elements" class="form_elements">
+				<p><input type="text" name="weapon_name" style="width:70%"> </p>
+				<p><input type="text" name="weapon_class"> (sword, gun, blunt, etc)</p>
+			</div>
+			<div id="weapon_desc_div" class="block_element">
+				<p>Physical Description:</p> 
+				<p><textarea id="weapon_desc" rows="5" cols="80"></textarea></p>
+			</div>
+			<div id="weapon_lore_div" class="block_element">
+				<p>Weapon Lore &amp Properties:</p>
+				<p><textarea id="weapon_lore" rows="5" cols="80"></textarea></p>
+			</div>
 		</div>
 	</section>
+</div>
+
+<!-- PAGE 5 -->
+<div id="page5" style="display:none">
+	<section class="centered_wide">
+		<div id="lore_welcome">
+			<h1>Lore</h1>
+			<hr>
+		</div>
+		<div id="prev_5to4" class="previous"> 
+			PREVIOUS
+			<span id="continue_span" class="clickable" onclick="pageContinue('page5', 'page4')" 
+			onmouseover="highlight('prev_5to4')" onmouseout="unhighlight('prev_5to4')"></span>
+		</div>
+		<div id="continue_5to6" class="continue"> 
+			CONTINUE
+			<span id="continue_span" class="clickable" onclick="pageContinue('page5', 'page6')" 
+			onmouseover="highlight('continue_5to6')" onmouseout="unhighlight('continue_5to6')"></span>
+		</div>
+		<div id="lore_intro" class="intro">
+			<p>Describe your character's origin story.</p>
+		</div>
+		<div id="lore_content" class="content_section">
+			<p>Lore:</p>
+			<p><textarea id="lore" rows="30" cols="100" maxlength="4000"></textarea>
+		</div>
+	</section>
+</div>
+
+<!-- PAGE 6 -->
+<div id="page6" style="display:none">
+	<section class="centered_wide">
+		<div id="finish_welcome">
+			<h1>Finish</h1>
+			<hr>
+		</div>
+		<div id="prev_6to5" class="previous"> 
+			PREVIOUS
+			<span id="continue_span" class="clickable" onclick="pageContinue('page6', 'page5')" 
+			onmouseover="highlight('prev_6to5')" onmouseout="unhighlight('prev_6to5')"></span>
+		</div>
+		<div id="finish_intro" class="intro">
+			<p>Check to make sure all fields are filled in.</p>
+			<p>When you're done, enter a password and submit your creation form.</p>
+		</div>
+		<div id="finish_content" class="content_section">
+		 	<p>Password: <input type="password" name="password"> </p>
+		</div>
+		<div id="submit_button">
+			SUBMIT
+			<span id="submit_span" class="clickable" onclick="submitForm()"
+			onmouseover="highlight('submit_button')" onmouseout="unhighlight('submit_button')"></span>
+		</div>
+	</section>
+</div>
+
 <footer>
 	<p class="alignleft">Morrison &amp Bailey Capital LLC &copy Andrew Guo BS 2016</p>
 	<p class="alignright">andrew.guo5@gmail.com</p>

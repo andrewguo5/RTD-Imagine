@@ -8,18 +8,54 @@
 .content_section {
 	padding-top: 25px;
 	color: lightblue;
+	width: 65%;
 }
 #char_classes {
 	width: 685px;
 }
 .class_box {
 	display: inline-block;
-	width: 175px;
-	height: 100px;
+	text-align: center;
+	padding: 50px;
+	width: 170px;
 	margin: 10px;
 	outline-style: double;
 	background-color: #111111;
 	position: relative;
+}
+.descriptions {
+	font-size: 80%;
+	display: block;
+	position: fixed;
+	/*top: 200px;
+	right: 175px;*/
+	outline-style: double;
+	background-color: maroon;
+	color: cornsilk;
+	width: 200px;
+	height: 300px;
+}
+.title {
+	font-size: 120%;
+	outline-style: solid;
+	outline-width: 1px;
+	text-align: center;
+	padding: 5px;
+	background-color: saddlebrown;
+}
+.stats {
+	display:inline-block;
+	line-height: 120%;
+	padding: 5px;
+	width: 80px;
+	height: 60px;
+}
+.flavor {
+	outline-style:solid;
+	outline-width: 1px;
+	font-style: italic;
+	padding: 5px;
+	height: 194px;
 }
 .continue {
 	text-align: center;
@@ -42,16 +78,18 @@
 .form_titles {
 	line-height: 360%;
 	display: inline-block;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #222222;
+	outline-style: solid;
+	outline-width: 1px;
+	outline-color: #222222;
+	width:30%;
 }
 .form_elements {
 	line-height: 360%;
 	display: inline-block;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #222222;
+	outline-style: solid;
+	outline-width: 1px;
+	outline-color: #222222;
+	width:70%;
 }
 #soul {
 	width: 150px;
@@ -59,6 +97,23 @@
 	outline-style: double;
 	color: #222222;
 	position: fixed;
-	left: 600px;
-	bottom: 200px;
+	left: 850px;
+	bottom: 185px;
+}
+.block_element {
+	outline-width: 1px;
+	outline-color:#222222;
+	outline-style: solid;
+	line-height: 360%;
+}
+#submit_button {
+	padding: 50px;
+	width: 200px;
+	text-align: center;
+	color: lightsteelblue;
+	outline-style: double;
+	outline-color: navy;
+	position: fixed;
+	bottom: 150px;
+	left: 350px;
 }

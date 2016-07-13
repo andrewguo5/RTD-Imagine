@@ -71,23 +71,59 @@ function displayInfo(classNumber) {
 	switch (classNumber) {
 		case 0:
 		swordDiv.style="background-color:navy";
+		document.getElementById("sword_desc").style.display="block";
 		break;
 		case 1:
 		spearDiv.style="background-color:navy";
+		document.getElementById("spear_desc").style.display="block";
 		break;
 		case 2:
 		rifleDiv.style="background-color:navy";
+		document.getElementById("rifle_desc").style.display="block";
 		break;
 		case 3:
 		crossDiv.style="background-color:navy";
+		document.getElementById("cross_desc").style.display="block";
 		break;
 		case 4:
 		staffDiv.style="background-color:navy";
+		document.getElementById("staff_desc").style.display="block";
 		break;
 		case 5:
 		heavyDiv.style="background-color:navy";
+		document.getElementById("heavy_desc").style.display="block";
 		break;
 	}
+}
+
+function displayDesc(classNumber) {
+	var descDiv;
+	switch (classNumber) {
+		case 0:
+		descDiv = document.getElementById("sword_desc");
+		break;
+		case 1:
+		descDiv = document.getElementById("spear_desc");
+		break;
+		case 2:
+		descDiv = document.getElementById("rifle_desc");
+		break;
+		case 3:
+		descDiv = document.getElementById("cross_desc");
+		break;
+		case 4:
+		descDiv = document.getElementById("staff_desc");
+		break;
+		case 5:
+		descDiv = document.getElementById("heavy_desc");
+		break;
+	}
+
+	var x = event.clientX;
+	var y = event.clientY;
+
+	descDiv.style.top=" "+y-289+"px";
+	descDiv.style.left=" "+x+"px";
 }
 
 //May not be needed
@@ -106,6 +142,7 @@ function undisplayInfo(classNumber) {
 		} else {
 			swordDiv.style="background-color:#111111"; 
 		}
+		document.getElementById("sword_desc").style.display="none";
 		break;
 		case 1:
 		if (instance.isSelected("spear")) {
@@ -113,6 +150,7 @@ function undisplayInfo(classNumber) {
 		} else {
 			spearDiv.style="background-color:#111111"; 
 		}
+		document.getElementById("spear_desc").style.display="none";
 		break;
 		case 2:
 		if (instance.isSelected("rifle")) {
@@ -120,6 +158,7 @@ function undisplayInfo(classNumber) {
 		} else {
 			rifleDiv.style="background-color:#111111"; 
 		}
+		document.getElementById("rifle_desc").style.display="none";
 		break;
 		case 3:
 		if (instance.isSelected("cross")) {
@@ -127,6 +166,7 @@ function undisplayInfo(classNumber) {
 		} else {
 			crossDiv.style="background-color:#111111"; 
 		}
+		document.getElementById("cross_desc").style.display="none";
 		break;
 		case 4:
 		if (instance.isSelected("staff")) {
@@ -134,6 +174,7 @@ function undisplayInfo(classNumber) {
 		} else {
 			staffDiv.style="background-color:#111111"; 
 		}
+		document.getElementById("staff_desc").style.display="none";
 		break;
 		case 5:
 		if (instance.isSelected("heavy")) {
@@ -141,6 +182,7 @@ function undisplayInfo(classNumber) {
 		} else {
 			heavyDiv.style="background-color:#111111"; 
 		}
+		document.getElementById("heavy_desc").style.display="none";
 		break;
 	}
 }
