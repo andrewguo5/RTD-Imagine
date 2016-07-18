@@ -30,7 +30,7 @@ textarea, input {
 }
 .descriptions {
 	font-size: 80%;
-	display: block;
+	display: none;
 	position: fixed;
 	/*top: 200px;
 	right: 175px;*/
