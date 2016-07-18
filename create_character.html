@@ -39,32 +39,32 @@
 			<div id="sword" class="class_box">
 				Sword
 				<span id="sword_span" class="clickable" onclick="selectClass(0)" onmouseover="displayInfo(0)" onmouseout="undisplayInfo(0)"
-					onmousemove="displayDesc(0)"></span>
+					onmousemove="displayDesc(event, 0)"></span>
 			</div>
 			<div id="spear" class="class_box">
 				Spear
 				<span id="spear_span" class="clickable" onclick="selectClass(1)" onmouseover="displayInfo(1)" onmouseout="undisplayInfo(1)"
-					onmousemove="displayDesc(1)"></span>
+					onmousemove="displayDesc(event, 1)"></span>
 			</div>
 			<div id="rifle" class="class_box">
 				Rifle
 				<span id="rifle_span" class="clickable" onclick="selectClass(2)" onmouseover="displayInfo(2)" onmouseout="undisplayInfo(2)"
-					onmousemove="displayDesc(2)"></span>
+					onmousemove="displayDesc(event, 2)"></span>
 			</div>
 			<div id="cross" class="class_box">
 				Cross
 				<span id="cross_span" class="clickable" onclick="selectClass(3)" onmouseover="displayInfo(3)" onmouseout="undisplayInfo(3)"
-					onmousemove="displayDesc(3)"></span>
+					onmousemove="displayDesc(event, 3)"></span>
 			</div>
 			<div id="staff" class="class_box">
 				Staff
 				<span id="staff_span" class="clickable" onclick="selectClass(4)" onmouseover="displayInfo(4)" onmouseout="undisplayInfo(4)"
-					onmousemove="displayDesc(4)"></span>
+					onmousemove="displayDesc(event, 4)"></span>
 			</div>
 			<div id="heavy" class="class_box">
 				Heavy
 				<span id="heavy_span" class="clickable" onclick="selectClass(5)" onmouseover="displayInfo(5)" onmouseout="undisplayInfo(5)"
-					onmousemove="displayDesc(5)"></span>
+					onmousemove="displayDesc(event, 5)"></span>
 			</div>
 			</div>
 		</div>	
@@ -161,9 +161,9 @@
 			<div class="stats">
 			<font color="lightgreen">
 				<p>ATK: -</p>
-				<p>SPE: 0</p>
+				<p>SPE: +</p>
 				<p>DEF: +</p>
-				<p>RNG: 0</p>
+				<p>RNG: -</p>
 				</font>
 			</div>
 			<div class="flavor">

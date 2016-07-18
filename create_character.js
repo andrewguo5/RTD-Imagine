@@ -70,33 +70,33 @@ function displayInfo(classNumber) {
 
 	switch (classNumber) {
 		case 0:
-		swordDiv.style="background-color:navy";
+		swordDiv.style="background-color:darkslategray";
 		document.getElementById("sword_desc").style.display="block";
 		break;
 		case 1:
-		spearDiv.style="background-color:navy";
+		spearDiv.style="background-color:darkslategray";
 		document.getElementById("spear_desc").style.display="block";
 		break;
 		case 2:
-		rifleDiv.style="background-color:navy";
+		rifleDiv.style="background-color:darkslategray";
 		document.getElementById("rifle_desc").style.display="block";
 		break;
 		case 3:
-		crossDiv.style="background-color:navy";
+		crossDiv.style="background-color:darkslategray";
 		document.getElementById("cross_desc").style.display="block";
 		break;
 		case 4:
-		staffDiv.style="background-color:navy";
+		staffDiv.style="background-color:darkslategray";
 		document.getElementById("staff_desc").style.display="block";
 		break;
 		case 5:
-		heavyDiv.style="background-color:navy";
+		heavyDiv.style="background-color:darkslategray";
 		document.getElementById("heavy_desc").style.display="block";
 		break;
 	}
 }
 
-function displayDesc(classNumber) {
+function displayDesc(event, classNumber) {
 	var descDiv;
 	switch (classNumber) {
 		case 0:
@@ -118,6 +118,8 @@ function displayDesc(classNumber) {
 		descDiv = document.getElementById("heavy_desc");
 		break;
 	}
+
+	event = event || window.event;
 
 	var x = event.clientX;
 	var y = event.clientY;
