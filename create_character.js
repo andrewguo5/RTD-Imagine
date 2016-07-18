@@ -124,7 +124,7 @@ function displayDesc(event, classNumber) {
 	var x = event.clientX;
 	var y = event.clientY;
 
-	descDiv.style.top=" "+y-289+"px";
+	descDiv.style.top=" "+y-300+"px";
 	descDiv.style.left=" "+x+"px";
 }
 

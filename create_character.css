@@ -60,7 +60,8 @@ textarea, input {
 	outline-width: 1px;
 	font-style: italic;
 	padding: 5px;
-	height: 194px;
+	height: 192px;
+	background-color: maroon;
 }
 .continue {
 	text-align: center;
